@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Welcome! Please fill out the form:</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color" required><br>
+
+    <label for="gender">Select Gender:</label>
+    <div class="gender-selection">
+      <label>
+        <input type="radio" name="gender" value="male" required>
+        <img    width="200px" height="200px"   src="./imgs/img_boy.jpg" alt="Male" onclick="selectGender('male')">
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" required>
+        <img  width="200px" height="200px"      src="./imgs/img_girl.jpg" alt="Female" onclick="selectGender('female')">
+      </label>
+    </div>
+      <br>
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
+

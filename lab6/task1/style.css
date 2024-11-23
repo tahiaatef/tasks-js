@@ -1,0 +1,56 @@
+* Reset some default browser styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.form-container, .profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input, button {
+  margin-bottom: 10px;
+}
+
+input[type="color"] {
+  width: 60px;
+  height: 30px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.gender-selection {
+  display: flex;
+  gap: 10px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.profile-container {
+  text-align: center;
+}

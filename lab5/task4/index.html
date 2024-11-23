@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Validator Game</h1>
+    <form id="validationForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+      <div class="gender-container">
+        <label>Gender</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+      </div>
+      <div class="sports-container">
+         <label>Sports</label>
+         <div class="sports">
+            <label><input type="checkbox" name="sports" value="Tennis"> Tennis</label>
+            <label><input type="checkbox" name="sports" value="Running"> Running</label>
+            <label><input type="checkbox" name="sports" value="Football"> Football</label>
+         </div>
+     </div>   
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="" disabled selected>Select your country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="India">India</option>
+      </select>
+
+      <div class="buttons">
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+      </div>
+
+      <div id="errorMessages" class="error-messages hidden"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
